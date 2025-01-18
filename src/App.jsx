@@ -1,4 +1,5 @@
 import React from 'react'
+import CondictionalRendering from './components/condictional-rendering/CondictionalRendering';
 
 const App = () => {
   const user = {
@@ -8,8 +9,9 @@ const App = () => {
   };
   return (
     <div>
-      <h1>Name : {user?.name}</h1>
-      <img src= {user?.imageUrl}  alt="" style={{"width":user.imageSize}} />
+      {/* <h1>Name : {user?.name}</h1>
+      <img src= {user?.imageUrl}  alt="" style={{"width":user.imageSize}} /> */}
+      <CondictionalRendering></CondictionalRendering>
     </div>
   )
 }
